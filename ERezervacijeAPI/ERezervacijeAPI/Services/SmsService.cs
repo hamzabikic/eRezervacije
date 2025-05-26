@@ -8,7 +8,24 @@ namespace ERezervacijeAPI.Services
     {
         public static void posaljiPoruku (string phoneNumber, string text)
         {
-            //ovdje ide kod za slanje poruke preko twilio servisa koji mozete pronaci u txt fajlu (twilioKod.txt)
+            var accountSid = "-- OVDJE NALIJEPITI VAŠ TWILIO ACCOUNT-SID --";
+            var authToken = "-- OVDJE NALIJEPITI VAŠ TWILIO AUTH-TOKEN --";
+            TwilioClient.Init(accountSid, authToken);
+            var poruka = "Restoran Premija - ERezervacije: ";
+            poruka += text;
+            var messageOptions = new CreateMessageOptions(
+              new PhoneNumber(phoneNumber));
+            messageOptions.MessagingServiceSid = "-- OVDJE NALIJEPITI VAŠ TWILIO MESSAGING SERVICE SID --";
+            messageOptions.Body = poruka;
+
+            try
+            {
+                var message = MessageResource.Create(messageOptions);
+            }
+            catch (Exception ex)
+            {
+
+            }
         }
     }
 }
