@@ -1,8 +1,8 @@
-# ERezervacije Application
+# eRezervacije Application
 
 # Description 
 
-ERezervacije is a web application designed for managing restaurant reservations. It is tailored for the needs of guests, hostesses, and managers, enabling easy and efficient handling of reservations and related tasks. The web application is fully localized in Bosnian, providing an intuitive experience for real-world restaurant environments.
+eRezervacije is a web application designed for managing restaurant reservations. It is tailored for the needs of guests, hostesses, and managers, enabling easy and efficient handling of reservations and related tasks. The web application is fully localized in Bosnian, providing an intuitive experience for real-world restaurant environments.
 
 The application is implemented with Angular for the frontend and C# ASP.NET Core Web API for the backend, connected to a SQL database. It features advanced functionalities such as uploading and sending images to the backend, sending emails via SMTP (email verification, password reset, reservation acceptance or rejection), and sending SMS messages via Twilio (phone number verification, reservation acceptance or rejection).
 
@@ -54,7 +54,7 @@ Installation
 
 Clone this repository to your local machine using the following command:
 
-git clone https://github.com/hamzabikic/ERezervacije-App.git
+git clone https://github.com/hamzabikic/eRezervacije-App.git
 
 Navigate to the application directory in your terminal:
 
