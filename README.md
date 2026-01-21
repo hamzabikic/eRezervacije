@@ -54,7 +54,7 @@ Installation
 
 Clone this repository to your local machine using the following command:
 
-git clone https://github.com/hamzabikic/eRezervacije-App.git
+git clone https://github.com/hamzabikic/eRezervacije.git
 
 Navigate to the application directory in your terminal:
 
